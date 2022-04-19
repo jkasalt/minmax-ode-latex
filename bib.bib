@@ -1,0 +1,447 @@
+
+@article{azizianTightUnifiedAnalysis2020,
+  title = {A {{Tight}} and {{Unified Analysis}} of {{Gradient-Based Methods}} for a {{Whole Spectrum}} of {{Games}}},
+  author = {Azizian, Wa{\"i}ss and Mitliagkas, Ioannis and {Lacoste-Julien}, Simon and Gidel, Gauthier},
+  year = {2020},
+  month = jul,
+  journal = {arXiv:1906.05945 [cs, math, stat]},
+  eprint = {1906.05945},
+  eprinttype = {arxiv},
+  primaryclass = {cs, math, stat},
+  abstract = {We consider differentiable games where the goal is to find a Nash equilibrium. The machine learning community has recently started using variants of the gradient method (GD). Prime examples are extragradient (EG), the optimistic gradient method (OG) and consensus optimization (CO), which enjoy linear convergence in cases like bilinear games, where the standard GD fails. The full benefits of theses relatively new methods are not known as there is no unified analysis for both strongly monotone and bilinear games. We provide new analyses of the EG's local and global convergence properties and use is to get a tighter global convergence rate for OG and CO. Our analysis covers the whole range of settings between bilinear and strongly monotone games. It reveals that these methods converge via different mechanisms at these extremes; in between, it exploits the most favorable mechanism for the given problem. We then prove that EG achieves the optimal rate for a wide class of algorithms with any number of extrapolations. Our tight analysis of EG's convergence rate in games shows that, unlike in convex minimization, EG may be much faster than GD.},
+  archiveprefix = {arXiv},
+  langid = {english},
+  keywords = {Computer Science - Machine Learning,G.1.6,I.2.6,Mathematics - Optimization and Control,Statistics - Machine Learning},
+  file = {/home/luca/Zotero/storage/P5FEINV9/Azizian et al. - 2020 - A Tight and Unified Analysis of Gradient-Based Met.pdf}
+}
+
+@article{azizianTightUnifiedAnalysis2020a,
+  title = {A {{Tight}} and {{Unified Analysis}} of {{Gradient-Based Methods}} for a {{Whole Spectrum}} of {{Games}}},
+  author = {Azizian, Wa{\"i}ss and Mitliagkas, Ioannis and {Lacoste-Julien}, Simon and Gidel, Gauthier},
+  year = {2020},
+  month = jul,
+  journal = {arXiv:1906.05945 [cs, math, stat]},
+  eprint = {1906.05945},
+  eprinttype = {arxiv},
+  primaryclass = {cs, math, stat},
+  abstract = {We consider differentiable games where the goal is to find a Nash equilibrium. The machine learning community has recently started using variants of the gradient method (GD). Prime examples are extragradient (EG), the optimistic gradient method (OG) and consensus optimization (CO), which enjoy linear convergence in cases like bilinear games, where the standard GD fails. The full benefits of theses relatively new methods are not known as there is no unified analysis for both strongly monotone and bilinear games. We provide new analyses of the EG's local and global convergence properties and use is to get a tighter global convergence rate for OG and CO. Our analysis covers the whole range of settings between bilinear and strongly monotone games. It reveals that these methods converge via different mechanisms at these extremes; in between, it exploits the most favorable mechanism for the given problem. We then prove that EG achieves the optimal rate for a wide class of algorithms with any number of extrapolations. Our tight analysis of EG's convergence rate in games shows that, unlike in convex minimization, EG may be much faster than GD.},
+  archiveprefix = {arXiv},
+  langid = {english},
+  keywords = {Computer Science - Machine Learning,G.1.6,I.2.6,Mathematics - Optimization and Control,Statistics - Machine Learning},
+  file = {/home/luca/Zotero/storage/RQ9YDQDP/Azizian et al. - 2020 - A Tight and Unified Analysis of Gradient-Based Met.pdf}
+}
+
+@article{bohmSolvingNonconvexNonconcaveMinMax2022,
+  title = {Solving {{Nonconvex-Nonconcave Min-Max Problems}} Exhibiting {{Weak Minty Solutions}}},
+  author = {B{\"o}hm, Axel},
+  year = {2022},
+  month = jan,
+  journal = {arXiv:2201.12247 [math]},
+  eprint = {2201.12247},
+  eprinttype = {arxiv},
+  primaryclass = {math},
+  abstract = {We investigate a structured class of nonconvex-nonconcave min-max problems exhibiting so-called \textbackslash emph\{weak Minty\} solutions, a notion which was only recently introduced, but is able to simultaneously capture different generalizations of monotonicity. We prove novel convergence results for a generalized version of the optimistic gradient method (OGDA) in this setting matching the ones recently shown for the extragradient method (EG). In addition we propose an adaptive stepsize version of EG, which does not require knowledge of the problem parameters.},
+  archiveprefix = {arXiv},
+  langid = {english},
+  keywords = {Mathematics - Optimization and Control},
+  file = {/home/luca/Zotero/storage/T8CTEKE2/Böhm - 2022 - Solving Nonconvex-Nonconcave Min-Max Problems exhi.pdf}
+}
+
+@article{botFastOGDAContinuous2022,
+  title = {Fast {{OGDA}} in Continuous and Discrete Time},
+  author = {Bot, Radu Ioan and Csetnek, Ern{\"o} Robert and Nguyen, Dang-Khoa},
+  year = {2022},
+  month = mar,
+  journal = {arXiv:2203.10947 [math]},
+  eprint = {2203.10947},
+  eprinttype = {arxiv},
+  primaryclass = {math},
+  abstract = {We study in a real Hilbert space continuous in time dynamics as well as numerical algorithms for the problem of approaching the set of zeros of a single-valued monotone and continuous operator \$V\$. The starting point is a second order dynamical system that combines a vanishing damping term with the time derivative of \$V\$ along the trajectory. Our method exhibits fast convergence rates of order \$o \textbackslash left( \textbackslash frac\{1\}\{t\textbackslash beta(t)\} \textbackslash right)\$ for \$\textbackslash |V(z(t))\textbackslash |\$, and \$\textbackslash beta(\textbackslash cdot)\$ is a nondecreasing function satisfiyng a growth condition, and also for the restricted gap function, which is a measure of optimality for variational inequalities. We also prove the weak convergence of the trajectory to a zero of \$V\$. Temporal discretizations generate implicit and explicit numerical algorithms, which can be both seen as accelerated versions of the Optimistic Gradient Descent Ascent (OGDA) method, for which we prove that the generated sequence of iterates shares the asymptotic features of the continuous dynamics. In particular we show for the implicit numerical algorithm convergence rates of order \$o \textbackslash left( \textbackslash frac\{1\}\{k\textbackslash beta\_k\} \textbackslash right)\$ for \$\textbackslash |V(z\^k)\textbackslash |\$ and the restricted gap function, where \$(\textbackslash beta\_k)\_\{k \textbackslash geq 0\}\$ is a nondecreasing sequence satisfying a growth condition. For the explicit numerical algorithm we show by additionally assuming that the operator \$V\$ is Lipschitz continuous convergence rates of order \$o \textbackslash left( \textbackslash frac\{1\}\{k\} \textbackslash right)\$ for \$\textbackslash |V(z\^k)\textbackslash |\$ and the restricted gap function. All convergence rate statements are last iterate convergence results; in addition to these we prove for both algorithms the convergence of the iterates to a zero of \$V\$. To our knowledge, our study exhibits the best known convergence rate results for monotone equations. Numerical experiments indicate the overwhelming superiority of our explicit numerical algorithm over other methods for monotone equations.},
+  archiveprefix = {arXiv},
+  langid = {english},
+  keywords = {47J20; 47H05; 65K10; 65K15; 65Y20; 90C30; 90C52,Mathematics - Optimization and Control},
+  file = {/home/luca/Zotero/storage/D6GW6AEX/Bot et al. - 2022 - Fast OGDA in continuous and discrete time.pdf}
+}
+
+@article{chartierModifiedDifferentialEquations2007,
+  title = {Modified Differential Equations},
+  author = {Chartier, Philippe and Hairer, Ernst and Vilmart, Gilles},
+  editor = {Caloz, Gabriel and Dauge, Monique},
+  year = {2007},
+  journal = {ESAIM: Proceedings},
+  volume = {21},
+  pages = {16--20},
+  issn = {1270-900X},
+  doi = {10.1051/proc:072102},
+  abstract = {Motivated by the theory of modified differential equations (backward error analysis) an approach for the construction of high order numerical integrators that preserve geometric properties of the exact flow is developed. This summarises a talk presented in honour of Michel Crouzeix.},
+  langid = {english},
+  file = {/home/luca/Zotero/storage/CXZ5M93H/Chartier et al. - 2007 - Modified differential equations.pdf}
+}
+
+@article{chavdarovaLastIterateConvergenceSaddle,
+  title = {Last-{{Iterate Convergence}} of {{Saddle Point Optimizers}} via {{High-Resolution Differential Equations}}},
+  author = {Chavdarova, Tatjana and Jordan, Michael I and Zampetakis, Manolis},
+  pages = {33},
+  abstract = {Several widely-used first-order saddle point optimization methods yield the same continuous-time ordinary differential equation (ODE) as that of the Gradient Descent Ascent (GDA) method when derived naively. However, their convergence properties are very different even in simple bilinear games. In this paper, we use a technique from fluid dynamics called High Resolution Differential Equations (HRDEs) to design ODEs that differentiate between popular saddle point optimizers. As our main result, we design an ODE that has last iterate convergence for monotone variational inequalities. To our knowledge, this is the first continuous-time dynamics shown to converge for such a general setting. We also provid{$\surd$}e an implicit discretization of our ODE and we show it has last iterate convergence at a rate O(1/ T ), which was previously shown to be optimal [Golowich et al., 2020], using only first-order smoothness of the monotone operator, in contrast to previous results that need second-order smoothness as well.},
+  langid = {english},
+  file = {/home/luca/Zotero/storage/7MID932A/Chavdarova et al. - Last-Iterate Convergence of Saddle Point Optimizer.pdf}
+}
+
+@misc{EffortlessOptimizationGradient,
+  title = {Effortless Optimization through Gradient Flows \textendash{} {{Machine Learning Research Blog}}},
+  langid = {american}
+}
+
+@article{fioriQuasiGeodesicNeuralLearning,
+  title = {Quasi-{{Geodesic Neural Learning Algorithms Over}} the {{Orthogonal Group}}: {{A Tutorial}}},
+  author = {Fiori, Simone and It, Unipg},
+  pages = {39},
+  abstract = {The aim of this contribution is to present a tutorial on learning algorithms for a single neural layer whose connection matrix belongs to the orthogonal group. The algorithms exploit geodesics appropriately connected as piece-wise approximate integrals of the exact differential learning equation. The considered learning equations essentially arise from the Riemannian-gradient-based optimization theory with deterministic and diffusion-type gradient. The paper aims specifically at reviewing the relevant mathematics (and at presenting it in as much transparent way as possible in order to make it accessible to readers that do not possess a background in differential geometry), at bringing together modern optimization methods on manifolds and at comparing the different algorithms on a common machine learning problem. As a numerical case-study, we consider an application to non-negative independent component analysis, although it should be recognized that Riemannian gradient methods give rise to general-purpose algorithms, by no means limited to ICA-related applications.},
+  langid = {english},
+  file = {/home/luca/Zotero/storage/IS8BI4TW/Fiori and It - Quasi-Geodesic Neural Learning Algorithms Over the.pdf}
+}
+
+@article{gaoIncreasingIterateAveraging2020,
+  title = {Increasing {{Iterate Averaging}} for {{Solving Saddle-Point Problems}}},
+  author = {Gao, Yuan and Kroer, Christian and Goldfarb, Donald},
+  year = {2020},
+  month = jun,
+  journal = {arXiv:1903.10646 [cs, math, stat]},
+  eprint = {1903.10646},
+  eprinttype = {arxiv},
+  primaryclass = {cs, math, stat},
+  abstract = {Many problems in machine learning and game theory can be formulated as saddlepoint problems, for which various first-order methods have been developed and proven efficient in practice. Under the general convex-concave assumption, most first-order methods only guarantee an ergodic convergence rate, that is, the uniform averages of the iterates converge at a O(1/T ) rate in terms of the saddle-point residual. However, numerically, the iterates themselves can often converge much faster than the uniform averages. This observation motivates increasing averaging schemes that put more weight on later iterates, in contrast to the usual uniform averaging. We show that such increasing averaging schemes, applied to various firstorder methods, are able to preserve the O(1/T ) convergence rate with no additional assumptions or computational overhead. Extensive numerical experiments on zero-sum game solving, market equilibrium computation and image denoising demonstrate the effectiveness of the proposed schemes. In particular, the increasing averages consistently outperform the uniform averages in all test problems by orders of magnitude. When solving matrix and extensive-form games, increasing averages consistently outperform the last iterates as well. For matrix games, a first-order method equipped with increasing averaging outperforms the highly competitive CFR+ algorithm.},
+  archiveprefix = {arXiv},
+  langid = {english},
+  keywords = {Computer Science - Computer Science and Game Theory,Computer Science - Machine Learning,Mathematics - Optimization and Control,Statistics - Machine Learning},
+  file = {/home/luca/Zotero/storage/UMHG3GZA/Gao et al. - 2020 - Increasing Iterate Averaging for Solving Saddle-Po.pdf}
+}
+
+@article{goebelLectureNotesArtificial,
+  title = {Lecture {{Notes}} in {{Artificial Intelligence}}},
+  author = {Goebel, Edited R and Siekmann, J and Wahlster, W},
+  pages = {433},
+  langid = {english},
+  file = {/home/luca/Zotero/storage/AZB5D8IV/Goebel et al. - Lecture Notes in Artiﬁcial Intelligence.pdf}
+}
+
+@article{gorbunovExtragradientMethodLastIterate2022,
+  title = {Extragradient {{Method}}: \${{O}}(1/{{K}})\$ {{Last-Iterate Convergence}} for {{Monotone Variational Inequalities}} and {{Connections With Cocoercivity}}},
+  shorttitle = {Extragradient {{Method}}},
+  author = {Gorbunov, Eduard and Loizou, Nicolas and Gidel, Gauthier},
+  year = {2022},
+  month = feb,
+  journal = {arXiv:2110.04261 [cs, math]},
+  eprint = {2110.04261},
+  eprinttype = {arxiv},
+  primaryclass = {cs, math},
+  abstract = {Extragradient method (EG) (Korpelevich, 1976) is one of the most popular methods for solving saddle point and variational inequalities problems (VIP). Despite its long history and significant attention in the optimization community, there remain important open questions about convergence of EG. In this paper, we resolve one of such questions and derive the first last-iterate O(1/K) convergence rate for EG for monotone and Lipschitz VIP without any additional assumptions on the operator unlike the only known result of this type (Golowich et al., 2020b) that relies on the Lipschitzness of the Jacobian of the operator. The rate is given in terms of reducing the squared norm of the operator. Moreover, we establish several results on the (non-)cocoercivity of the update operators of EG, Optimistic Gradient Method, and Hamiltonian Gradient Method, when the original operator is monotone and Lipschitz.},
+  archiveprefix = {arXiv},
+  langid = {english},
+  keywords = {Computer Science - Machine Learning,Mathematics - Optimization and Control},
+  file = {/home/luca/Zotero/storage/3DGLVM98/Gorbunov et al. - 2022 - Extragradient Method $O(1K)$ Last-Iterate Conver.pdf}
+}
+
+@article{grimmerLimitingBehaviorsNonconvexNonconcave,
+  title = {Limiting {{Behaviors}} of {{Nonconvex-Nonconcave Minimax Optimization}} via {{Continuous-Time Systems}}},
+  author = {Grimmer, Benjamin and Lu, Haihao and Worah, Pratik and Mirrokni, Vahab},
+  pages = {23},
+  abstract = {Unlike nonconvex optimization, where gradient descent is guaranteed to converge to a local optimizer, algorithms for nonconvex-nonconcave minimax optimization can have topologically different solution paths: sometimes converging to a solution, sometimes never converging and instead following a limit cycle, and sometimes diverging. In this paper, we study the limiting behaviors of three classic minimax algorithms: gradient descent ascent (GDA), alternating gradient descent ascent (AGDA), and the extragradient method (EGM). Numerically, we observe that all of these limiting behaviors can arise in Generative Adversarial Networks (GAN) training and are easily demonstrated even in simple GAN models. To explain these different behaviors, we study the high-order resolution continuous-time dynamics that correspond to each algorithm, which results in sufficient (and almost necessary) conditions for the local convergence by each method. Moreover, this ODE perspective allows us to characterize the phase transition between these potentially nonconvergent limiting behaviors caused by introducing regularization in the problem instance.},
+  langid = {english},
+  file = {/home/luca/Zotero/storage/FD7UXBEK/Grimmer et al. - Limiting Behaviors of Nonconvex-Nonconcave Minimax.pdf}
+}
+
+@article{hajizadehLinearConvergenceExtraGradient2022,
+  title = {On the {{Linear Convergence}} of {{Extra-Gradient Methods}} for {{Nonconvex-Nonconcave Minimax Problems}}},
+  author = {Hajizadeh, Saeed and Lu, Haihao and Grimmer, Benjamin},
+  year = {2022},
+  month = jan,
+  journal = {arXiv:2201.06167 [math]},
+  eprint = {2201.06167},
+  eprinttype = {arxiv},
+  primaryclass = {math},
+  abstract = {Recently, minimax optimization received renewed focus due to modern applications in machine learning, robust optimization, and reinforcement learning. The scale of these applications naturally leads to the use of first-order methods. However, the nonconvexities and nonconcavities present in these problems, prevents the application of typical Gradient Descent-Ascent, which is known to diverge even in bilinear problems. Recently, it was shown that the Proximal Point Method (PPM) converges linearly for a family of nonconvex-nonconcave problems. In this paper, we study the convergence of a damped version of Extra-Gradient Method (EGM) which avoids potentially costly proximal computations, only relying on gradient evaluation. We show that EGM converges linearly for smooth minimax optimization problem satisfying the same nonconvex-nonconcave condition needed by PPM.},
+  archiveprefix = {arXiv},
+  langid = {english},
+  keywords = {Mathematics - Optimization and Control},
+  file = {/home/luca/Zotero/storage/AZ2T84NK/Hajizadeh et al. - 2022 - On the Linear Convergence of Extra-Gradient Method.pdf}
+}
+
+@article{hsiehLimitsMinmaxOptimization2021,
+  title = {The Limits of Min-Max Optimization Algorithms: Convergence to Spurious Non-Critical Sets},
+  shorttitle = {The Limits of Min-Max Optimization Algorithms},
+  author = {Hsieh, Ya-Ping and Mertikopoulos, Panayotis and Cevher, Volkan},
+  year = {2021},
+  month = feb,
+  journal = {arXiv:2006.09065 [cs, math, stat]},
+  eprint = {2006.09065},
+  eprinttype = {arxiv},
+  primaryclass = {cs, math, stat},
+  abstract = {Compared to ordinary function minimization problems, min-max optimization algorithms encounter far greater challenges because of the existence of periodic cycles and similar phenomena. Even though some of these behaviors can be overcome in the convex-concave regime, the general case is considerably more difficult. On that account, we take an in-depth look at a comprehensive class of state-of-the art algorithms and prevalent heuristics in non-convex / non-concave problems, and we establish the following general results: a) generically, the algorithms' limit points are contained in the internally chain-transitive (ICT) sets of a common, mean-field system; b) the attractors of this system also attract the algorithms in question with arbitrarily high probability; and c) all algorithms avoid the system's unstable sets with probability 1. On the surface, this provides a highly optimistic outlook for min-max algorithms; however, we show that there exist spurious attractors that do not contain any stationary points of the problem under study. In this regard, our work suggests that existing min-max algorithms may be subject to inescapable convergence failures. We complement our theoretical analysis by illustrating such attractors in simple, two-dimensional, almost bilinear problems.},
+  archiveprefix = {arXiv},
+  langid = {english},
+  keywords = {Computer Science - Machine Learning,Mathematics - Optimization and Control,Statistics - Machine Learning},
+  file = {/home/luca/Zotero/storage/39J7JPIG/Hsieh et al. - 2021 - The limits of min-max optimization algorithms con.pdf}
+}
+
+@article{kricheneAcceleratedMirrorDescent,
+  title = {Accelerated {{Mirror Descent}} in {{Continuous}} and {{Discrete Time}}},
+  author = {Krichene, Walid and Bayen, Alexandre and Bartlett, Peter L},
+  pages = {9},
+  abstract = {We study accelerated mirror descent dynamics in continuous and discrete time. Combining the original continuous-time motivation of mirror descent with a recent ODE interpretation of Nesterov's accelerated method, we propose a family of continuous-time descent dynamics for convex functions with Lipschitz gradients, such that the solution trajectories converge to the optimum at a O(1/t2) rate. We then show that a large family of first-order accelerated methods can be obtained as a discretization of the ODE, and these methods converge at a O(1/k2) rate. This connection between accelerated mirror descent and the ODE provides an intuitive approach to the design and analysis of accelerated first-order algorithms.},
+  langid = {english},
+  file = {/home/luca/Zotero/storage/DNXG2NEX/Krichene et al. - Accelerated Mirror Descent in Continuous and Discr.pdf}
+}
+
+@article{linCoxRegressionAnalysis1994,
+  title = {Cox Regression Analysis of Multivariate Failure Time Data: {{The}} Marginal Approach},
+  shorttitle = {Cox Regression Analysis of Multivariate Failure Time Data},
+  author = {Lin, D. Y.},
+  year = {1994},
+  journal = {Statistics in Medicine},
+  volume = {13},
+  number = {21},
+  pages = {2233--2247},
+  issn = {1097-0258},
+  doi = {10.1002/sim.4780132105},
+  abstract = {Multivariate failure time data are commonly encountered in scientific investigations because each study subject may experience multiple events or because there exists clustering of subjects such that failure times within the same cluster are correlated. In this paper, I present a general methodology for analysing such data, which is analogous to that of Liang and Zeger for longitudinal data analysis. This approach formulates the marginal distributions of multivariate failure times with the familiar Cox proportional hazards models while leaving the nature of dependence among related failure times completely unspecified. The baseline hazard functions for the marginal models may be identical or different. Simple estimating equations for the regression parameters are developed which yield consistent and asymptotically normal estimators, and robust variance-covarinace estimators are constructed to account for the intra-class correlation. Simulation results demonstrate that the large-sample approximations are adequate for practical use and that ignoring the intra-class correlation could yield rather misleading variance estimators. The proposed methodology has been fully implemented in a simple computer program which also incorporates several alternative approaches. Detailed illustrations with data from four clinical or epidemiologic studies are provided.},
+  copyright = {Copyright \textcopyright{} 1994 John Wiley \& Sons, Ltd.},
+  langid = {english},
+  annotation = {\_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/sim.4780132105},
+  file = {/home/luca/Zotero/storage/IUDI3I3X/sim.html}
+}
+
+@article{liStochasticModifiedEquations,
+  title = {Stochastic {{Modified Equations}} and {{Dynamics}} of {{Stochastic Gradient Algorithms I}}: {{Mathematical Foundations}}},
+  author = {Li, Qianxiao and Tai, Cheng},
+  pages = {47},
+  abstract = {We develop the mathematical foundations of the stochastic modified equations (SME) framework for analyzing the dynamics of stochastic gradient algorithms, where the latter is approximated by a class of stochastic differential equations with small noise parameters. We prove that this approximation can be understood mathematically as an weak approximation, which leads to a number of precise and useful results on the approximations of stochastic gradient descent (SGD), momentum SGD and stochastic Nesterov's accelerated gradient method in the general setting of stochastic objectives. We also demonstrate through explicit calculations that this continuous-time approach can uncover important analytical insights into the stochastic gradient algorithms under consideration that may not be easy to obtain in a purely discrete-time setting.},
+  langid = {english},
+  file = {/home/luca/Zotero/storage/CZHDHQ4T/Li and Tai - Stochastic Modiﬁed Equations and Dynamics of Stoch.pdf}
+}
+
+@article{luResolutionODEFramework2021,
+  title = {An \${{O}}(S\^r)\$-{{Resolution ODE Framework}} for {{Understanding Discrete-Time Algorithms}} and {{Applications}} to the {{Linear Convergence}} of {{Minimax Problems}}},
+  author = {Lu, Haihao},
+  year = {2021},
+  month = jul,
+  journal = {arXiv:2001.08826 [cs, math]},
+  eprint = {2001.08826},
+  eprinttype = {arxiv},
+  primaryclass = {cs, math},
+  abstract = {There has been a long history of using ordinary differential equations (ODEs) to understand the dynamics of discrete-time algorithms (DTAs). Surprisingly, there are still two fundamental and unanswered questions: (i) it is unclear how to obtain a suitable ODE from a given DTA, and (ii) it is unclear the connection between the convergence of a DTA and its corresponding ODEs. In this paper, we propose a new machinery \textendash{} an O(sr)-resolution ODE framework \textendash{} for analyzing the behavior of a generic DTA, which (partially) answers the above two questions. The framework contains three steps: 1. To obtain a suitable ODE from a given DTA, we define a hierarchy of O(sr)-resolution ODEs of a DTA parameterized by the degree r, where s is the step-size of the DTA. We present a principal approach to construct the unique O(sr)-resolution ODEs from a DTA; 2. To analyze the resulting ODE, we propose the O(sr)-linear-convergence condition of a DTA with respect to an energy function, under which the O(sr)-resolution ODE converges linearly to an optimal solution; 3. To bridge the convergence properties of a DTA and its corresponding ODEs, we define the properness of an energy function and show that the linear convergence of the O(sr)-resolution ODE with respect to a proper energy function can automatically guarantee the linear convergence of the DTA.},
+  archiveprefix = {arXiv},
+  langid = {english},
+  keywords = {Computer Science - Machine Learning,Mathematics - Optimization and Control},
+  file = {/home/luca/Zotero/storage/XBU3WJ8P/Lu - 2021 - An $O(s^r)$-Resolution ODE Framework for Understan.pdf}
+}
+
+@article{moertelFluorouracilLevamisoleEffective1995,
+  title = {Fluorouracil plus {{Levamisole}} as {{Effective Adjuvant Therapy}} after {{Resection}} of {{Stage III Colon Carcinoma}}: {{A Final Report}}},
+  shorttitle = {Fluorouracil plus {{Levamisole}} as {{Effective Adjuvant Therapy}} after {{Resection}} of {{Stage III Colon Carcinoma}}},
+  author = {Moertel, Charles G. and Fleming, Thomas R. and Macdonald, John S. and Haller, Daniel G. and Laurie, John A. and Tangen, Catherine M. and Ungerleider, James S. and Emerson, William A. and Tormey, Douglass C. and Glick, John H. and Veeder, Michael H. and Mailliard, James A.},
+  year = {1995},
+  month = mar,
+  journal = {Annals of Internal Medicine},
+  volume = {122},
+  number = {5},
+  pages = {321--326},
+  publisher = {{American College of Physicians}},
+  issn = {0003-4819},
+  doi = {10.7326/0003-4819-122-5-199503010-00001},
+  file = {/home/luca/Zotero/storage/Q4ZF93Y2/0003-4819-122-5-199503010-00001.html}
+}
+
+@article{moertelLevamisoleFluorouracilAdjuvant1990,
+  title = {Levamisole and {{Fluorouracil}} for {{Adjuvant Therapy}} of {{Resected Colon Carcinoma}}},
+  author = {Moertel, Charles G. and Fleming, Thomas R. and Macdonald, John S. and Haller, Daniel G. and Laurie, John A. and Goodman, Phyllis J. and Ungerleider, James S. and Emerson, William A. and Tormey, Douglas C. and Glick, John H. and Veeder, Michael H. and Mailliard, James A.},
+  year = {1990},
+  month = feb,
+  journal = {New England Journal of Medicine},
+  volume = {322},
+  number = {6},
+  pages = {352--358},
+  publisher = {{Massachusetts Medical Society}},
+  issn = {0028-4793},
+  doi = {10.1056/NEJM199002083220602},
+  abstract = {THIS year, cancer of the colon will afflict over 100,000 persons in the United States.1 As a cause of death due to cancer, it is second only to lung cancer. There is no established means of preventing colon cancer, and there is no reliable and cost-effective means of screening to ensure early diagnosis. In the main, symptomatic patients must be treated as they present themselves, and in half of them cure has unfortunately not been possible. However, in about 80 percent of patients the diagnosis is made at a stage when all apparent diseased tissue can be surgically removed. In . . .},
+  pmid = {2300087},
+  annotation = {\_eprint: https://doi.org/10.1056/NEJM199002083220602},
+  file = {/home/luca/Zotero/storage/XFSG9MB3/Moertel et al. - 1990 - Levamisole and Fluorouracil for Adjuvant Therapy o.pdf;/home/luca/Zotero/storage/8YY3N9DG/nejm199002083220602.html}
+}
+
+@misc{ORF523LagrangianDuality,
+  title = {{{ORF523}}: {{Lagrangian}} Duality | {{I}}'m a Bandit},
+  howpublished = {https://blogs.princeton.edu/imabandit/2013/02/21/orf523-lagrangian-duality/},
+  file = {/home/luca/Zotero/storage/IPC2UH3S/orf523-lagrangian-duality.html}
+}
+
+@misc{ORF523MirrorDescent,
+  title = {{{ORF523}}: {{Mirror Descent}}, Part {{II}}/{{II}} | {{I}}'m a Bandit},
+  howpublished = {https://blogs.princeton.edu/imabandit/2013/04/18/orf523-mirror-descent-part-iiii/}
+}
+
+@misc{ORF523MirrorProx,
+  title = {{{ORF523}}: {{Mirror Prox}} | {{I}}'m a Bandit},
+  howpublished = {https://blogs.princeton.edu/imabandit/2013/04/23/orf523-mirror-prox/}
+}
+
+@article{qinTrainingGenerativeAdversarial,
+  title = {Training {{Generative Adversarial Networks}} by {{Solving Ordinary Differential Equations}}},
+  author = {Qin, Chongli and Wu, Yan and Springenberg, Jost Tobias and Brock, Andrew and Donahue, Jeff and Lillicrap, Timothy P and Kohli, Pushmeet},
+  pages = {11},
+  abstract = {The instability of Generative Adversarial Network (GAN) training has frequently been attributed to gradient descent. Consequently, recent methods have aimed to tailor the models and training procedures to stabilise the discrete updates. In contrast, we study the continuous-time dynamics induced by GAN training. Both theory and toy experiments suggest that these dynamics are in fact surprisingly stable. From this perspective, we hypothesise that instabilities in training GANs arise from the integration error in discretising the continuous dynamics. We experimentally verify that well-known ODE solvers (such as Runge-Kutta) can stabilise training \textendash{} when combined with a regulariser that controls the integration error. Our approach represents a radical departure from previous methods which typically use adaptive optimisation and stabilisation techniques that constrain the functional space (e.g. Spectral Normalisation). Evaluation on CIFAR-10 and ImageNet shows that our method outperforms several strong baselines, demonstrating its efficacy.},
+  langid = {english},
+  file = {/home/luca/Zotero/storage/LKBZZRAN/Qin et al. - Training Generative Adversarial Networks by Solvin.pdf}
+}
+
+@article{shiUnderstandingAccelerationPhenomenon2018,
+  title = {Understanding the {{Acceleration Phenomenon}} via {{High-Resolution Differential Equations}}},
+  author = {Shi, Bin and Du, Simon S. and Jordan, Michael I. and Su, Weijie J.},
+  year = {2018},
+  month = nov,
+  journal = {arXiv:1810.08907 [cs, math, stat]},
+  eprint = {1810.08907},
+  eprinttype = {arxiv},
+  primaryclass = {cs, math, stat},
+  abstract = {Gradient-based optimization algorithms can be studied from the perspective of limiting ordinary differential equations (ODEs). Motivated by the fact that existing ODEs do not distinguish between two fundamentally different algorithms\textemdash Nesterov's accelerated gradient method for strongly convex functions (NAG-SC) and Polyak's heavy-ball method\textemdash we study an alternative limiting process that yields high-resolution ODEs. We show that these ODEs permit a general Lyapunov function framework for the analysis of convergence in both continuous and discrete time. We also show that these ODEs are more accurate surrogates for the underlying algorithms; in particular, they not only distinguish between NAG-SC and Polyak's heavy-ball method, but they allow the identification of a term that we refer to as ``gradient correction'' that is present in NAG-SC but not in the heavy-ball method and is responsible for the qualitative difference in convergence of the two methods. We also use the high-resolution ODE framework to study Nesterov's accelerated gradient method for (non-strongly) convex functions, uncovering a hitherto unknown result\textemdash that NAG-C minimizes the squared gradient norm at an inverse cubic rate. Finally, by modifying the high-resolution ODE of NAG-C, we obtain a family of new optimization methods that are shown to maintain the accelerated convergence rates of NAG-C for smooth convex functions.},
+  archiveprefix = {arXiv},
+  langid = {english},
+  keywords = {Computer Science - Machine Learning,Mathematics - Classical Analysis and ODEs,Mathematics - Numerical Analysis,Mathematics - Optimization and Control,Statistics - Machine Learning},
+  file = {/home/luca/Zotero/storage/RPZEUGQH/Shi et al. - 2018 - Understanding the Acceleration Phenomenon via High.pdf}
+}
+
+@article{suDifferentialEquationModeling,
+  title = {A {{Differential Equation}} for {{Modeling Nesterov}}'s {{Accelerated Gradient Method}}: {{Theory}} and {{Insights}}},
+  author = {Su, Weijie and Boyd, Stephen and Candes, Emmanuel},
+  pages = {9},
+  abstract = {We derive a second-order ordinary differential equation (ODE), which is the limit of Nesterov's accelerated gradient method. This ODE exhibits approximate equivalence to Nesterov's scheme and thus can serve as a tool for analysis. We show that the continuous time ODE allows for a better understanding of Nesterov's scheme. As a byproduct, we obtain a family of schemes with similar convergence rates. The ODE interpretation also suggests restarting Nesterov's scheme leading to an algorithm, which can be rigorously proven to converge at a linear rate whenever the objective is strongly convex.},
+  langid = {english},
+  file = {/home/luca/Zotero/storage/PB9U4SZZ/Su et al. - A Differential Equation for Modeling Nesterov’s Ac.pdf}
+}
+
+@article{suDifferentialEquationModelinga,
+  title = {A {{Differential Equation}} for {{Modeling Nesterov}}'s {{Accelerated Gradient Method}}: {{Theory}} and {{Insights}}},
+  author = {Su, Weijie and Boyd, Stephen and Candes, Emmanuel J},
+  pages = {43},
+  abstract = {We derive a second-order ordinary differential equation (ODE) which is the limit of Nesterov's accelerated gradient method. This ODE exhibits approximate equivalence to Nesterov's scheme and thus can serve as a tool for analysis. We show that the continuous time ODE allows for a better understanding of Nesterov's scheme. As a byproduct, we obtain a family of schemes with similar convergence rates. The ODE interpretation also suggests restarting Nesterov's scheme leading to an algorithm, which can be rigorously proven to converge at a linear rate whenever the objective is strongly convex.},
+  langid = {english},
+  file = {/home/luca/Zotero/storage/SZ9F552H/Su et al. - A Diﬀerential Equation for Modeling Nesterov’s Acc.pdf}
+}
+
+@inproceedings{sunHighResolutionModelingFastest2020,
+  title = {High-{{Resolution Modeling}} of the {{Fastest First-Order Optimization Method}} for {{Strongly Convex Functions}}},
+  booktitle = {2020 59th {{IEEE Conference}} on {{Decision}} and {{Control}} ({{CDC}})},
+  author = {Sun, Boya and George, Jemin and Kia, Solmaz},
+  year = {2020},
+  month = dec,
+  pages = {4237--4242},
+  issn = {2576-2370},
+  doi = {10.1109/CDC42340.2020.9304444},
+  abstract = {Motivated by the fact that the gradient-based optimization algorithms can be studied from the perspective of limiting ordinary differential equations (ODEs), here we derive an ODE representation of the accelerated triple momentum (TM) algorithm. For unconstrained optimization problems with strongly convex cost, the TM algorithm has a proven faster convergence rate than the Nesterov's accelerated gradient (NAG) method but with the same computational complexity. We show that similar to the NAG method, in order to accurately capture the characteristics of the TM method, we need to use a high-resolution modeling to obtain the ODE representation of the TM algorithm. We propose a Lyapunov analysis to investigate the stability and convergence behavior of the proposed high-resolution ODE representation of the TM algorithm. We compare the rate of the ODE representation of the TM method with that of the NAG method to confirm its faster convergence. Our study also leads to a tighter bound on the worst rate of convergence for the ODE model of the NAG method. In this paper, we also discuss the use of the integral quadratic constraint (IQC) method to establish an estimate on the rate of convergence of the TM algorithm. A numerical example verifies our results.},
+  keywords = {Acceleration,Convergence,Convex functions,Lyapunov methods,Optimization,Stability analysis,Tools},
+  file = {/home/luca/Zotero/storage/7V4TI82I/Sun et al. - 2020 - High-Resolution Modeling of the Fastest First-Orde.pdf;/home/luca/Zotero/storage/XUK9KAH2/9304444.html}
+}
+
+@inproceedings{sunHighResolutionModelingFastest2020a,
+  title = {High-{{Resolution Modeling}} of the {{Fastest First-Order Optimization Method}} for {{Strongly Convex Functions}}},
+  booktitle = {2020 59th {{IEEE Conference}} on {{Decision}} and {{Control}} ({{CDC}})},
+  author = {Sun, Boya and George, Jemin and Kia, Solmaz},
+  year = {2020},
+  month = dec,
+  pages = {4237--4242},
+  issn = {2576-2370},
+  doi = {10.1109/CDC42340.2020.9304444},
+  abstract = {Motivated by the fact that the gradient-based optimization algorithms can be studied from the perspective of limiting ordinary differential equations (ODEs), here we derive an ODE representation of the accelerated triple momentum (TM) algorithm. For unconstrained optimization problems with strongly convex cost, the TM algorithm has a proven faster convergence rate than the Nesterov's accelerated gradient (NAG) method but with the same computational complexity. We show that similar to the NAG method, in order to accurately capture the characteristics of the TM method, we need to use a high-resolution modeling to obtain the ODE representation of the TM algorithm. We propose a Lyapunov analysis to investigate the stability and convergence behavior of the proposed high-resolution ODE representation of the TM algorithm. We compare the rate of the ODE representation of the TM method with that of the NAG method to confirm its faster convergence. Our study also leads to a tighter bound on the worst rate of convergence for the ODE model of the NAG method. In this paper, we also discuss the use of the integral quadratic constraint (IQC) method to establish an estimate on the rate of convergence of the TM algorithm. A numerical example verifies our results.},
+  keywords = {Acceleration,Convergence,Convex functions,Lyapunov methods,Optimization,Stability analysis,Tools},
+  file = {/home/luca/Zotero/storage/BBAG5VRA/Sun et al. - 2020 - High-Resolution Modeling of the Fastest First-Orde.pdf;/home/luca/Zotero/storage/MCBMZ9EZ/9304444.html}
+}
+
+@misc{SurgicalAdjuvantTherapy,
+  title = {Surgical Adjuvant Therapy of Large-Bowel Carcinoma: An Evaluation of Levamisole and the Combination of Levamisole and Fluorouracil. {{The North Central Cancer Treatment Group}} and the {{Mayo Clinic}} - {{PubMed}}},
+  howpublished = {https://pubmed.ncbi.nlm.nih.gov/2778478/},
+  file = {/home/luca/Zotero/storage/39CQDKSJ/2778478.html}
+}
+
+@article{tianMinimaxOptimalReinforcement,
+  title = {Towards {{Minimax Optimal Reinforcement Learning}} in {{Factored Markov Decision Processes}}},
+  author = {Tian, Yi and Qian, Jian and Sra, Suvrit},
+  pages = {12},
+  abstract = {We study minimax optimal reinforcement learning in episodic factored Markov decision processes (FMDPs), which are MDPs with conditionally independent transition components. Assuming the factorization is known, we propose two model-based algorithms. The first one achieves minimax optimal regret guarantees for a rich class of factored structures, while the second one enjoys better computational complexity with a slightly worse regret. A key new ingredient of our algorithms is the design of a bonus term to guide exploration. We complement our algorithms by presenting several structure-dependent lower bounds on regret for FMDPs that reveal the difficulty hiding in the intricacy of the structures.},
+  langid = {english},
+  file = {/home/luca/Zotero/storage/ANNDNLMP/Tian et al. - Towards Minimax Optimal Reinforcement Learning in .pdf}
+}
+
+@inproceedings{wangDeepForwardBackwardSDEs2019,
+  title = {Deep {{Forward-Backward SDEs}} for {{Min-max Control}}},
+  booktitle = {2019 {{IEEE}} 58th {{Conference}} on {{Decision}} and {{Control}} ({{CDC}})},
+  author = {Wang, Ziyi and Lee, Keuntaek and Pereira, Marcus A. and Exarchos, Ioannis and Theodorou, Evangelos A.},
+  year = {2019},
+  month = dec,
+  pages = {6807--6814},
+  issn = {2576-2370},
+  doi = {10.1109/CDC40024.2019.9028871},
+  abstract = {This paper presents a novel approach to numerically solve stochastic differential games for nonlinear systems. The proposed approach relies on the nonlinear Feynman-Kac theorem that establishes a connection between parabolic deterministic partial differential equations and forward-backward stochastic differential equations. Using this theorem the Hamilton-Jacobi-Isaacs partial differential equation associated with differential games is represented by a system of forward-backward stochastic differential equations. Numerical solution of the aforementioned system of stochastic differential equations is performed using importance sampling and a neural network with Long Short-Term Memory and Fully Connected layers. The resulting algorithm is tested on two example systems in simulation and compared against the standard risk neutral stochastic optimal control formulations.},
+  keywords = {Differential equations,Games,Heuristic algorithms,Mathematical model,Monte Carlo methods,Optimal control,Standards},
+  file = {/home/luca/Zotero/storage/8ATXBSLC/Wang et al. - 2019 - Deep Forward-Backward SDEs for Min-max Control.pdf;/home/luca/Zotero/storage/2TLY2AR8/9028871.html}
+}
+
+@article{weichertBayesianOptimizationMin2021,
+  title = {Bayesian {{Optimization}} for {{Min Max Optimization}}},
+  author = {Weichert, Dorina and Kister, Alexander},
+  year = {2021},
+  month = jul,
+  journal = {arXiv:2107.13772 [cs, math, stat]},
+  eprint = {2107.13772},
+  eprinttype = {arxiv},
+  primaryclass = {cs, math, stat},
+  abstract = {A solution that is only reliable under favourable conditions is hardly a safe solution. Min Max Optimization is an approach that returns optima that are robust against worst case conditions. We propose algorithms that perform Min Max Optimization in a setting where the function that should be optimized is not known a priori and hence has to be learned by experiments. Therefore we extend the Bayesian Optimization setting, which is tailored to maximization problems, to Min Max Optimization problems. While related work extends the two acquisition functions Expected Improvement and Gaussian Process Upper Confidence Bound; we extend the two acquisition functions Entropy Search and Knowledge Gradient. These acquisition functions are able to gain knowledge about the optimum instead of just looking for points that are supposed to be optimal. In our evaluation we show that these acquisition functions allow for better solutions - converging faster to the optimum than the benchmark settings.},
+  archiveprefix = {arXiv},
+  langid = {english},
+  keywords = {Computer Science - Machine Learning,Mathematics - Optimization and Control,Statistics - Machine Learning},
+  file = {/home/luca/Zotero/storage/9P7WZ3QS/Weichert and Kister - 2021 - Bayesian Optimization for Min Max Optimization.pdf}
+}
+
+@article{weiLinearLastiterateConvergence2021,
+  title = {Linear {{Last-iterate Convergence}} in {{Constrained Saddle-point Optimization}}},
+  author = {Wei, Chen-Yu and Lee, Chung-Wei and Zhang, Mengxiao and Luo, Haipeng},
+  year = {2021},
+  month = mar,
+  journal = {arXiv:2006.09517 [cs, stat]},
+  eprint = {2006.09517},
+  eprinttype = {arxiv},
+  primaryclass = {cs, stat},
+  abstract = {Optimistic Gradient Descent Ascent (OGDA) and Optimistic Multiplicative Weights Update (OMWU) for saddle-point optimization have received growing attention due to their favorable last-iterate convergence. However, their behaviors for simple bilinear games over the probability simplex are still not fully understood \textemdash{} previous analysis lacks explicit convergence rates, only applies to an exponentially small learning rate, or requires additional assumptions such as the uniqueness of the optimal solution.},
+  archiveprefix = {arXiv},
+  langid = {english},
+  keywords = {Computer Science - Computer Science and Game Theory,Computer Science - Machine Learning,Statistics - Machine Learning},
+  file = {/home/luca/Zotero/storage/G3BJCAVA/Wei et al. - 2021 - Linear Last-iterate Convergence in Constrained Sad.pdf}
+}
+
+@misc{WorldOptimization,
+  title = {The World of Optimization},
+  howpublished = {https://awibisono.github.io/2016/06/06/world-of-optimization.html},
+  file = {/home/luca/Zotero/storage/6UXFEVHB/world-of-optimization.html}
+}
+
+@article{xuRobustReinforcementLearning2021,
+  title = {Robust {{Reinforcement Learning Under Minimax Regret}} for {{Green Security}}},
+  author = {Xu, Lily and Perrault, Andrew and Fang, Fei and Chen, Haipeng and Tambe, Milind},
+  year = {2021},
+  month = jun,
+  journal = {arXiv:2106.08413 [cs]},
+  eprint = {2106.08413},
+  eprinttype = {arxiv},
+  primaryclass = {cs},
+  abstract = {Green security domains feature defenders who plan patrols in the face of uncertainty about the adversarial behavior of poachers, illegal loggers, and illegal fishers. Importantly, the deterrence effect of patrols on adversaries' future behavior makes patrol planning a sequential decision-making problem. Therefore, we focus on robust sequential patrol planning for green security following the minimax regret criterion, which has not been considered in the literature. We formulate the problem as a game between the defender and nature who controls the parameter values of the adversarial behavior and design an algorithm MIRROR to find a robust policy. MIRROR uses two reinforcement learning\textendash based oracles and solves a restricted game considering limited defender strategies and parameter values. We evaluate MIRROR on real-world poaching data.},
+  archiveprefix = {arXiv},
+  langid = {english},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning,Computer Science - Multiagent Systems},
+  file = {/home/luca/Zotero/storage/2VFSIB6J/Xu et al. - 2021 - Robust Reinforcement Learning Under Minimax Regret.pdf}
+}
+
+@book{zotero-45,
+  type = {Book}
+}
+
+
