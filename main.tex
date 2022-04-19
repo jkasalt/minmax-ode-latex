@@ -1,0 +1,29 @@
+\documentclass{scrreprt}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{todonotes}
+\usepackage{subfiles} % keep last
+
+% Commands
+\newcommand{\R}{\mathbb{R}}
+
+% Theorems
+\theoremstyle{remark}
+\newtheorem{ex}{Example}
+
+\title{Min-max optimisation in the continuous time limit}
+\author{Luca Bracone}
+
+\begin{document}
+\maketitle
+
+\chapter{Introduction}
+\subfile{introduction.tex}
+\chapter{A derivation using $O(s^r)$-resolution ODEs}
+\subfile{hairer-lu.tex}
+
+\bibliographystyle{alpha}
+\bibliography{bib}
+
+\end{document}

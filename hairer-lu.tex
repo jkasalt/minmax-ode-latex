@@ -1,0 +1,31 @@
+\documentclass[main.tex]{subfiles}
+
+\begin{document}
+\cite{luResolutionODEFramework2021}
+\subsection{Example: Mirror descent $O(s^r)$-resolution ODE}
+Suppose continuous dynamics of the form-resolution ODEs
+\[ \dot X = f_0(X) + sf_1(X) + s^2f_2(X) + \dots \]
+This gives Taylor expansion
+\begin{align*}
+	X(s) & = X(0) + s(f_0(X) + sf_1(X) + \dots)                                          \\
+	     & + \frac{s^2}{2}(f'_0(X) + sf'_1(X) + \dots)(f_0(X) + sf_1(X) + \dots) + \dots
+\end{align*}\label{eq:taylor-x}
+
+On the other hand, mirror descent uses as update rule
+\[ g(x, s) = \nabla\psi^{-1}(\nabla\psi(x) + s \nabla F(x)) \]
+The derivatives are
+\begin{align*}
+	\partial_s g(x, s)    & = \nabla_s \nabla \psi^{-1}(\nabla\psi(x) + s \nabla F(x))\nabla F(x)                      \\
+	\partial_{ss} g(x, s) & = \nabla^2_s \nabla \psi^{-1}(\nabla\psi(x) + s \nabla F(x)) \nabla F(x) \cdot \nabla F(x) \\
+\end{align*}
+
+We consider the Taylor expansion of $g(x,s)$ w.r.t.\ $s$ and equate the coefficients of both polynomials to find
+\begin{align*}
+	f_0                             & = \partial_s g(x,s)                                                                                         \\
+	f_1 + \frac{1}{2}f'_0 \cdot f_0 & = \partial_{ss} g(x,s)                                                                                      \\
+	\implies f_1                    & = \nabla^2_s \nabla \psi^{-1}(\nabla\psi(x) + s \nabla F(x)) \nabla F(x) \cdot \nabla F(x)                  \\
+	                                & + \frac{1}{2}\nabla_s \nabla^2 \psi^{-1}(\nabla \psi (x) + s \nabla F(x))(\nabla^2 \psi(x) + s\nabla^2F(x)) \\
+	                                & \ \cdot  \nabla_s \nabla \psi^{-1}(\nabla\psi(x) + s \nabla F(x))\nabla F(x)
+\end{align*}
+\end{document}
+

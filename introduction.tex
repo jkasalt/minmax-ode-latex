@@ -1,0 +1,61 @@
+\documentclass[main.tex]{subfiles}
+\begin{document}
+% Recently, there have been advances in various fields thanks to the 
+% successful application of risk-minimisation machine learning. Using this
+% method one aims to find a set of parameters $a_1,\dots,a_m \in \R^n$ such
+% that $y = f(z; a_1,\dots, a_m)$  reaches \[ \min_y l(y) \] for some scalar field
+% $l: \R^n \to \R$
+In numerical optimisation, one aims to find the minimizer \[\min_x l(x)\] of a
+differentiable scalar field (also known as ``loss function") $l: \R^n \to \R.$
+The quintessential algorithm to solve this problem is gradient descent (GD)
+which given a step size $\eta \in \R$ computes a sequence of iterates \[x_{k+1} = x_k + \eta \nabla l(x_k)\] whose
+convergence properties are suitable for a wide range of applications and have been
+extensively studied by thae optimization commmunity.
+
+Nowadays, there are problems in which we would like instead to calculate
+equilibria or ``saddle points" of our scalar field. We change the problem in
+the following way: the loss $l: \R^n \times \R^m \to R$ now takes two arguments
+$x$ and $y$ and we would like to know which are the values so that \[\min_x
+    \max_y l(x,y)\] is reached.
+
+One of the most natural approaches we could try to solve this new problem would
+be to adapt gradient descent in the following way
+\begin{align*}
+    x_{n+1} & = x_n - \eta \nabla_x l(x_n, y_n) \\
+    y_{n + 1} & = y_n + \eta \nabla_y l(x_n, y_n)
+\end{align*}
+to obtain gradient descent-ascent (GDA). However we can show that even on a
+simple example GDA fails to find a saddle point.
+\begin{ex}
+    Take $l(x,y) = xy$ with $x, y \in \R$. Then $l$ has a saddle point at the origin, but GDA gives
+    \[
+        \begin{bmatrix}
+            x_{n+1} \\
+            y_{n+1}
+        \end{bmatrix}
+        = \begin{bmatrix}
+            1 & -\eta \\
+            \eta & 1
+        \end{bmatrix}
+        \begin{bmatrix}
+            x_n \\
+            y_n
+        \end{bmatrix}.
+    \]
+    We can see that the norm of the new iterate is $\sqrt{1 + \eta^2}$ times
+    the old one, and so GDA diverges.
+\end{ex}
+For the rest of this report we write $z = (x,y)$ the concatenation of $x$ and
+$y$ and $\nabla l(z) = (-\nabla_x l(x,y), \nabla_y l(x,y))$ so that GDA can be
+written simply as $z_{n+1} = z_n + \eta \nabla l(z)$
+Given that, many different algorithms have been proposed to find saddle points.
+We give here some of the most popular ones: 
+\begin{itemize}
+    \item[EG] Extra gradient: $z_{n+1} = z_n + \eta \nabla l(z_n + \eta \nabla l(z))$ 
+    \item[OGDA] Optimistic gradient descent-ascent: $z_{n+1} = z_n - 2\eta \nabla l(z_n) + \eta \nabla l(z_{n-1})$
+\end{itemize}
+These algorithms have been shown to converge \todo{Explain in what conditions,
+cite?} and so we would like to understand if there is a fundamental difference
+that causes the difference in behaviour.
+
+\section{Naive continuous time dynamics}
