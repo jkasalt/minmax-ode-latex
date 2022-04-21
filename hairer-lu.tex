@@ -1,15 +1,21 @@
 \documentclass[main.tex]{subfiles}
 
 \begin{document}
-\cite{luResolutionODEFramework2021}
-\subsection{Example: Mirror descent $O(s^r)$-resolution ODE}
-Suppose continuous dynamics of the form-resolution ODEs
-\[ \dot X = f_0(X) + sf_1(X) + s^2f_2(X) + \dots \]
-This gives Taylor expansion
+\section{The process}
+In light of \cite{luResolutionODEFramework2021} we present here a method
+to obtain differential equations from discrete algorithms.
+We assume that the velocity depends on the current position in the following way 
+\[ \dot Z(t) = f_0(Z(t)) + sf_1(Z(t)) + s^2f_2(Z(t)) + \dots \]
+To alleviate the notation we will write $Z$ instead of $Z(t)$.
+We obtain a Taylor expansion
 \begin{align*}
-	X(s) & = X(0) + s(f_0(X) + sf_1(X) + \dots)                                          \\
-	     & + \frac{s^2}{2}(f'_0(X) + sf'_1(X) + \dots)(f_0(X) + sf_1(X) + \dots) + \dots
+	Z(t + s) & = Z + s(f_0(Z) + sf_1(Z) + \dots)                                          \\
+	     & + \frac{s^2}{2}(f'_0(Z) + sf'_1(Z) + \dots)(f_0(Z) + sf_1(Z) + \dots) + \dots
 \end{align*}\label{eq:taylor-x}
+
+On the other hand, given a numerical algorithm $z_{n+1} = \varphi(z_n, s)$
+we can also express 
+\section{Example: Mirror descent $O(s^r)$-resolution ODE}
 
 On the other hand, mirror descent uses as update rule
 \[ g(x, s) = \nabla\psi^{-1}(\nabla\psi(x) + s \nabla F(x)) \]
