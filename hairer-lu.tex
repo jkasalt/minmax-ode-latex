@@ -39,29 +39,28 @@ and the other coefficients are found in the same manner.
 	expression equals
 	\[z + s \nabla l(z) + s^2 \nabla^2 l(z) \nabla l(z) + \frac{s^3}{2}
 		\nabla^2 l(z) \nabla l(z) \nabla l(z).\]
-    By equating the two polynomials as usual we find that \begin{align*}
-        f_0 &=  \nabla l(z) \\
-        f_1 &= \frac{1}{2}\nabla^2 l(z) \nabla l(z)
-    \end{align*}
+	By equating the two polynomials as usual we find that \begin{align*}
+		f_0 & =  \nabla l(z)                         \\
+		f_1 & = \frac{1}{2}\nabla^2 l(z) \nabla l(z)
+	\end{align*}
 \end{ex}
 
 \section{Example: Mirror descent $O(s^r)$-resolution ODE}
 
-On the other hand, mirror descent uses as update rule
-\[ g(x, s) = \nabla\psi^{-1}(\nabla\psi(x) + s \nabla F(x)) \]
-The derivatives are
+Let $\psi: \R^n \to \R$ be what we call a mirror map. Then, mirror descent uses
+as update rule \[ g(z, s) = \nabla\psi^{-1}(\nabla\psi(z) + s \nabla l(z)). \]
+We denote $\alpha_n(z) = \nabla^n \psi^{-1}(\nabla \psi (x))$ and $L^k(z) =
+	\prod_{i=1}^k \nabla l(z)$ which is an expression that makes sense only when
+multiplied on the left by a tensor of sufficient order.
+So we see that $\nabla \alpha_n(z) = \alpha_{n+1}(z) \nabla^2 \psi(z)$.
+Given that, the first derivative with respect to $s$ is
 \begin{align*}
-	\partial_s g(x, s)    & = \nabla_s \nabla \psi^{-1}(\nabla\psi(x) + s \nabla F(x))\nabla F(x)                      \\
-	\partial_{ss} g(x, s) & = \nabla^2_s \nabla \psi^{-1}(\nabla\psi(x) + s \nabla F(x)) \nabla F(x) \cdot \nabla F(x) \\
+	 & \nabla^2\psi^{-1}(\nabla \psi(z) + s \nabla l(z)) \nabla l(z) \\
+	 & = \alpha_2(z)L^1(z) + s \alpha_3(z)\nabla^2 \psi(z) L^2(z) +
+	\frac{s^2}{2} \big(\alpha_4(z) (\nabla^2 \psi(z))^2 + \alpha_3(z) \nabla^3
+	\psi(z) \big)
+	L^3(z)
 \end{align*}
-
-We consider the Taylor expansion of $g(x,s)$ w.r.t.\ $s$ and equate the coefficients of both polynomials to find
-\begin{align*}
-	f_0                             & = \partial_s g(x,s)                                                                                         \\
-	f_1 + \frac{1}{2}f'_0 \cdot f_0 & = \partial_{ss} g(x,s)                                                                                      \\
-	\implies f_1                    & = \nabla^2_s \nabla \psi^{-1}(\nabla\psi(x) + s \nabla F(x)) \nabla F(x) \cdot \nabla F(x)                  \\
-	                                & + \frac{1}{2}\nabla_s \nabla^2 \psi^{-1}(\nabla \psi (x) + s \nabla F(x))(\nabla^2 \psi(x) + s\nabla^2F(x)) \\
-	                                & \ \cdot  \nabla_s \nabla \psi^{-1}(\nabla\psi(x) + s \nabla F(x))\nabla F(x)
-\end{align*}
+where we performed a Taylor expansion of the first term.
 \end{document}
 
