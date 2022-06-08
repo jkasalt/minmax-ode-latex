@@ -1,30 +1,50 @@
-\documentclass{scrreprt}
+\documentclass{article}
+\usepackage{todonotes}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{amsthm}
-\usepackage{todonotes}
+\usepackage{vmargin}
+\setmarginsrb{28mm}{25mm}{28mm}{25mm}{0pt}{0mm}{0pt}{0mm}
+\setlength{\footskip}{20pt}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\captionsetup{compatibility=false}
 \usepackage{subfiles} % keep last
 
 
 % Commands
 \newcommand{\R}{\mathbb{R}}
+\DeclareMathOperator{\diag}{diag}
 
 % Theorems
 \theoremstyle{remark}
 \newtheorem{ex}{Example}
 
-\title{Min-max optimisation in the continuous time limit}
+\title{Min-max optimization in the continuous time limit}
 \author{Luca Bracone}
 
 \begin{document}
-\maketitle
+\input{Titlepage}
 
-\chapter{Introduction}
+\clearpage
+\thispagestyle{empty}
+\tableofcontents
+
+\clearpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\section{Introduction}
 \subfile{introduction.tex}
-\chapter{Deriving ODEs with the $O(s^r)$-resolution framework}\label{chap:osr}
-\subfile{hairer-lu.tex}
+\section{Methods to derive ODEs}\label{chap:osr}
+\subfile{odes.tex}
+\section{Convergence properties of ODEs}
+\subfile{convergence.tex}
+\section{Constrained optimization setting}
+\subfile{constrained.tex}
 
 \bibliographystyle{alpha}
-\bibliography{bib}
+\bibliography{biblio.bib}
 
 \end{document}

@@ -34,7 +34,7 @@ simple example GDA fails to find a saddle point.
 			y_{n+1}
 		\end{bmatrix}
 		= \begin{bmatrix}
-			1    & - s \\
+			1 & - s \\
 			s & 1
 		\end{bmatrix}
 		\begin{bmatrix}
@@ -51,40 +51,40 @@ written simply as $z_{n+1} = z_n + s \nabla l(z_n)$
 Given that, many different algorithms have been proposed to find saddle points.
 We give here some of the most popular ones:
 \begin{itemize}
-	\item (EG) Extra gradient: $z_{n+1} = z_n + s \nabla l(z_n + s \nabla l(z_n))$
-	\item (OGDA) Optimistic gradient descent-ascent: $z_{n+1} = z_n - 2s \nabla l(z_n) + s \nabla l(z_{n-1})$
+	\item (EG) Extra gradient: $z_{n+1} = z_n + s \nabla l(z_n + s \nabla
+		      l(z_n))$
+	\item (OGDA) Optimistic gradient descent-ascent: $z_{n+1} = z_n - 2s \nabla
+		      l(z_n) + s \nabla l(z_{n-1})$
 \end{itemize}
 These algorithms have been shown to converge \todo{Explain in what conditions,
 	cite?} and so we would like to understand if there is a fundamental difference
 that causes the difference in behaviour.
 
-\section{Deriving continuous time dynamics from discrete time algorithms}
-Following the paper of \cite{suDifferentialEquationModeling2016}, there has been a
-lot of attention towards deriving differential equations $\dot Z(t) = f(Z(t),
-	t)$ whose trajectory
-follows a given discrete time algorithms.
-In this section we show that by
-simply letting the timestep $s \to 0$ all
-of the algorithms presented so far yield the same ODE, gradient flow (GF).
-The main idea is to assume that the discrete algorithm is obtained from
-a continuous curve at fixed length times \[z_n = Z(t_n)\] where $t_n = t_0 + ns.$
-Using this, algorithms of the form \[z_{n+1} = z_n + s\varphi(z_n)\] can
-be rewritten as \[\frac{Z(t_n + s) - Z(t_n)}{s} = \varphi(Z(t_n)).\]
-Finally, taking limits $s \to 0$ gives \[\dot Z(t) = \varphi(Z(t)),\] where
-we dropped the index from $t_n.$
+\subsection{Deriving continuous time dynamics from discrete time algorithms}
+Following the paper of \cite{suDifferentialEquationModeling2016}, there has
+been a lot of attention towards deriving differential equations $\dot Z(t) =
+	f(Z(t), t)$ whose trajectory follows a given discrete time algorithms. In this
+subsection we show that by simply letting the timestep $s \to 0$ all of the
+algorithms presented so far yield the same ODE, gradient flow (GF). The main
+idea is to assume that the discrete algorithm is obtained from a continuous
+curve at fixed length times \[z_n = Z(t_n)\] where $t_n = t_0 + ns.$ Using
+this, algorithms of the form \[z_{n+1} = z_n + s\varphi(z_n)\] can be rewritten
+as \[\frac{Z(t_n + s) - Z(t_n)}{s} = \varphi(Z(t_n)).\] Finally, taking limits
+$s \to 0$ gives \[\dot Z(t) = \varphi(Z(t)),\] where we dropped the index from
+$t_n.$
 \begin{ex}
 	Given that in GDA $\varphi(z_n)$ takes the form $\nabla l(z_n)$ we obtain a
 	continuous time approximation \[\dot Z(t) = \nabla l(Z(t)),\] which we call gradient flow.
 \end{ex}
 \begin{ex}
-    For EG, the update step gives \[\frac{Z(t + s) - Z(t)}{s} = \nabla l
-    \big(Z(t) + s \nabla l(Z(t))\big),\]
-    and taking the limits gives gradient flow again.
+	For EG, the update step gives \[\frac{Z(t + s) - Z(t)}{s} = \nabla l
+		\big(Z(t) + s \nabla l(Z(t))\big),\]
+	and taking the limits gives gradient flow again.
 \end{ex}
 \todo{todo: OGDA}  Given that GDA diverges even in simple cases and that the
 other two algorithms are known to converge in a large class of situations, we
 are quite dissatisfied in doscovering that they present the same continuous
-time dynamics. 
+time dynamics.
 \todo{todo: natural descent from mirror descent}
 In Chapter~\ref{chap:osr} we will present a new method that makes use of
 modified differential equations to obtain continuous time approximations that
